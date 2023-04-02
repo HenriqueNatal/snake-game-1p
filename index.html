@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Snake</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    <div class="container noselect">
+
+        <div id="ui">
+            <h2><u><b>PONTUAÇÃO:</b></u></h2>
+            <span id="score">00</span>
+        </div>
+        <audio src="musicgame.mp3" loop="loop"></audio>
+        <div class="wrapper">
+            <button id="replay">RECOMEÇAR
+                <span class="material-symbols-outlined">
+                    replay
+                    </span>
+            </button>
+            <div id="canvas"></div>
+            <button2 id="music", >ON
+                <span class="material-symbols-outlined">
+                    volume_up
+                    </span>
+            </button2>
+            <button3 id="stop">OFF
+                <span class="material-symbols-outlined">
+                    volume_off
+                    </span>
+            </button3>
+        </div>
+        <script>
+            const button2 = document.querySelector('button2')
+            button2.addEventListener('click', function () {
+                const audio = document.querySelector('audio')
+                audio.play();
+            })
+            const button3 = document.querySelector('button3')
+            button3.addEventListener('click', function () {
+                const audio = document.querySelector('audio')
+                audio.pause();
+            })
+            </script>
+
+        <div id="author">
+            <h1><u>Snake</u></h1> <span><u><b>By hnm</b></u></span>
+        </div>
+    </div>
+
+ <script src="./index.js"></script>   
+</body>
+</html>
